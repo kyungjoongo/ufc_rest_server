@@ -65,6 +65,8 @@ router.get('/getFightersByName/:id', function (req, res, next) {
                 _data.push(entry);
             }
 
+
+
         });
 
         res.json(_data);
