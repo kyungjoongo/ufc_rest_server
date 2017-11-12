@@ -61,7 +61,7 @@ router.get('/getFightersByName/:id', function (req, res, next) {
 
             var _elementOne = entry.last_name.toLowerCase();
 
-            if (searchTerm.indexOf(entry.last_name.toLowerCase()) != -1) {
+            if (_elementOne.indexOf(searchTerm.toLowerCase()) != -1) {
                 _data.push(entry);
             }
 
@@ -70,6 +70,8 @@ router.get('/getFightersByName/:id', function (req, res, next) {
         res.json(_data);
     });
 });
+
+
 
 
 
