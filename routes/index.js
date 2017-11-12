@@ -59,7 +59,7 @@ router.get('/getFightersByName/:id', function (req, res, next) {
 
             console.log(entry.last_name.toLowerCase());
 
-            var _elementOne = entry.last_name.toLowerCase();
+            var _elementOne =entry.first_name.toLowerCase()+ " "+  entry.last_name.toLowerCase();
 
             if (_elementOne.indexOf(searchTerm.toLowerCase()) != -1) {
                 _data.push(entry);
